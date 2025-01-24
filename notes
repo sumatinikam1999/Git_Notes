@@ -1,5 +1,32 @@
 Git Repository: - Git repository contains files, history, config managed by GIT. 
-
 Git Direcotry:- Also called "local repo" is yours .git repo its area where git save everything.
 
+Git user configuration
+git config --global user.name "S N" 
+git config --global email.name "sn123@gmail.com" 
 
+To check user configuration details
+git config --list
+
+To initialize repo -> git init
+To get current working details -> git status
+To move file from working to staging area -> git add .
+To commit -> git commit -m "msg"
+To check diff -> git diff
+
+To get commit details -> git log
+To check commits done by partocular author -> git log --author="S N"
+git log --author="sn123#ssh-keygen -t ed25519 -c"raushan123@gmail.com"@gmail.com"
+
+Setup authentication in local github
+
+Open gitbash -> ssh-keygen -t ed25519 -C "sn123@gmail.com" -> Enter -> cd /c/Users/Admin/.ssh/ -> copy id_25519.pub -> paste on github -> settings -> ssh and gpg keys -> generate new
+
+Github account -> settings -> ssh and gpg keys -> generate new 
+
+To test connection in local git bash run -> ssh -T git@github.com
+
+To push changes to remote -> git push 
+
+To check current branch -> git branch
+To checkout to other branch -> git checkout main
