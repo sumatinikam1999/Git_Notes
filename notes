@@ -30,3 +30,23 @@ To push changes to remote -> git push
 
 To check current branch -> git branch
 To checkout to other branch -> git checkout main
+
+
+Admin@DESKTOP-2IV78AD MINGW64 ~/Git_Notes (develop)
+$ git push
+fatal: The current branch develop has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin develop
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+--> To avoid above error -> git push origin develop 
+but to push in main/master we can just give -> git push
+
+
+
+
+
+
