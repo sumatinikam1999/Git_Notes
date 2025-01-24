@@ -45,8 +45,53 @@ upstream, see 'push.autoSetupRemote' in 'git help config'.
 --> To avoid above error -> git push origin develop 
 but to push in main/master we can just give -> git push
 
+Go to the pullreuqest---create new pull request--compare the changes. 
+Base:- develop branch ---compare ----main branch 
 
+If you want to work an merge file then we have to pull the latest code from develop branch. 
+Cmd:- Git pull origin develop 
+come to develop branch then run this cmd. 
 
+Go to develop branch add or edit file
+Go to master branch and run --> git merge develop -> after running this one file will be opened add commit msg save file
 
+Reverse in previous state
+we can use RESET or REVERT
+RESET- Practically user can think of it as a “rollback". 
+ Reset points local environment back to a previous commit. 
+ Get reset is a powerful command that is used to undo local changes to the state of a get 
+repo. 
+ To reset staging area:- 
+git reset <filename> 
 
+To reset the changes from both staging area and working dir at a time. 
+If we want to delete the add. file or current working dir file then we can use this cmd 
+git reset --hard 
+
+REVERT:- 
+ The Net effect of the git revert command is similar to reset, buts its approach is 
+different. 
+ The revert command helps you undo an existing commit to. 
+ Revert adds a new commit at the end of the chain to "cancel" changes. 
+ REVERT or RESET? 
+ If User have already pushed commit to the remote repo , a revert is a mice way to 
+cancel out changes. 
+ Git workflow works well for picking up additional commits at the end of a branch, but it 
+can be challenging if a set of commits is no longer seen in the chain when someone 
+resets the branch pointer back. 
+ It commits in local then reset is good, it commits is pushed then revert is good option. 
+
+Git Reset:
+to check log:- 
+git log --oneline
+
+create file -> add content -> add -> commit -> open same file -> add content -> add -> commit
+
+git log --oneline
+
+If second commit which you did is not correct then to go back to previous commit use -> git reset --soft commit-id
+soft commit only deleted commit from staging area if you want to delete from working area also then --> git reset --hard commit-id
+
+Git Revert:
+modify existing file -> add content -> add -> commit -> push -> add content -> add -> commit -> push
 
