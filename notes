@@ -45,8 +45,15 @@ upstream, see 'push.autoSetupRemote' in 'git help config'.
 --> To avoid above error -> git push origin develop 
 but to push in main/master we can just give -> git push
 
+Go to the pullreuqest---create new pull request--compare the changes. 
+Base:- develop branch ---compare ----main branch 
 
+If you want to work an merge file then we have to pull the latest code from develop branch. 
+Cmd:- Git pull origin develop 
+come to develop branch then run this cmd. 
 
+Go to develop branch add or edit file
+Go to master branch and run --> git merge develop
 
 
 
