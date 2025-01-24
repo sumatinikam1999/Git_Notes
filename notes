@@ -95,3 +95,49 @@ soft commit only deleted commit from staging area if you want to delete from wor
 Git Revert:
 modify existing file -> add content -> add -> commit -> push -> add content -> add -> commit -> push
 
+If you want to delete the commit of "commit revert" from remote server use below cmd 
+To this cmd we can delete the latest commit to the remote server. 
+git revert HEAD 
+git push 
+If we run this cmd they will create another commit with previous commit in that commit they 
+will delete the content as well as. 
+
+To check the details of merge:- 
+git log --oneline --graph 
+
+Merge branch with message cmd:- 
+git merge branchname -m "message" 
+git merge main -m "merging main to develop"
+
+When same file having different content in different branches if you do merge, conflict occurs 
+resolve conflict then add and commit.
+ Conflict occurs when you merge branches.
+
+Git Stash:- 
+ Suppose you are implementing a new feature for your product, your code is in progress and 
+suddenly a customer escalation comes because of this, you have to keep aside your new feature 
+work few hours. 
+ you cannot commit your partial code and also cannot throw away your changes so you need 
+some temporary storage, when you can store your partial charges and later an commit it. 
+ To stash an item (only applies to modified files nt new files).
+
+To stash an item:-
+git stash
+To see stash ite list:- 
+git stash list 
+To apply stashed items: - 
+git stash apply (stash@{0}) 
+To clear the stash items:- 
+git stash clear/drop
+
+we can get the details of track or untracked file with the help of below cmd:- 
+git stash -a 
+o/p:- stash the data 
+If you want to continue your work o pending or stash file used another method or cmd also. 
+git stash pop
+
+To pop will retrieve the file or delete from the stash area but apply cmd retrieve the data file noe delete 
+from the stash. 
+
+
+
